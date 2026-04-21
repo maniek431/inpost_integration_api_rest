@@ -1,0 +1,21 @@
+{
+    "name": "maniek431/inpost_integration_api_rest",
+    "description": "API rest integration inpost",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "maniek431\\Inpost_Integration_Api_Rest\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "maniek431",
+            "email": "132276301+maniek431@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
