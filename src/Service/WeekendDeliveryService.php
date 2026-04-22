@@ -5,12 +5,12 @@ namespace maniek431\Inpost_Integration_Api_Rest\Service;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use maniek431\Inpost_Integration_Api_Rest\Exception\InpostApiException;
-use maniek431\Inpost_Integration_Api_Rest\Model\Shipment; // For the constant
+use maniek431\Inpost_Integration_Api_Rest\Model\Shipment;
 
 class WeekendDeliveryService
 {
     private ClientInterface $httpClient;
-    private ServiceService $serviceService;
+
 
     public function __construct(ClientInterface $httpClient)
     {
@@ -19,7 +19,6 @@ class WeekendDeliveryService
     }
 
     /**
-
      *
      * @param string 
      * @return bool 
@@ -31,7 +30,7 @@ class WeekendDeliveryService
             $service = $this->serviceService->getService($serviceId);
             return in_array(Shipment::ADDITIONAL_SERVICE_WEEKEND_DELIVERY, $service->additional_services);
         } catch (InpostApiException $e) {
-            // Jeśli usługa nie istnieje lub wystąpił inny błąd API, zakładamy, że nie wspiera.
+            
             return false;
         }
     }

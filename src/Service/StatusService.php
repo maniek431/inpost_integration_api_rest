@@ -18,16 +18,16 @@ class StatusService
 
     /**
      *
-     * @param string $trackingNumber
-     * @return Tracking
+     * @param string 
+     * @return Status
      * @throws InpostApiException
      */
     public function getStatus(string $statusNumber): Status
     {
         try {
-            $response = $this->httpClient->get('https://api-shipx-pl.easypack24.net/v1/statuses ' . $statusNumber);
+            $response = $this->httpClient->get('https://api-shipx-pl.easypack24.net/v1/statuses/' . $statusNumber);
             $data = json_decode($response->getBody()->getContents(), true);
-            return new Tracking($data);
+            return new Status($data);
         } catch (GuzzleException $e) {
             throw new InpostApiException('Failed to fetch status: ' . $e->getMessage(), $e->getCode(), $e);
         }

@@ -17,8 +17,8 @@ class DispatchOrderPriceListService
 
     /**
 
-     * @param array $filters Tablica filtrów, np. ['organization_id' => 'YOUR_ORG_ID', 'service' => 'inpost_courier_standard']
-     * @return array Zwraca tablicę cenników.
+     * @param array 
+     * @return array 
      * @throws InpostApiException
      */
     public function getPriceList(array $filters = []): array

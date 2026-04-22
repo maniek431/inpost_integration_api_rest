@@ -17,9 +17,8 @@ class TrackingService
     }
 
     /**
-     * Pobiera historię i aktualny status przesyłki na podstawie numeru trackingowego.
      *
-     * @param string $trackingNumber
+     * @param string 
      * @return Tracking
      * @throws InpostApiException
      */

@@ -38,7 +38,7 @@ class MPKService
     }
 
     /**
-     * Pobiera szczegóły konkretnego MPK.
+
      * @param string $id
      * @return MPK
      * @throws InpostApiException
@@ -55,7 +55,6 @@ class MPKService
     }
 
     /**
-     * Tworzy nowe MPK.
      *
      * @param array $data
      * @return MPK
@@ -75,7 +74,7 @@ class MPKService
     }
 
     /**
-     * Aktualizuje istniejące MPK.
+
      * @param string $id
      * @param array $data
      * @return MPK

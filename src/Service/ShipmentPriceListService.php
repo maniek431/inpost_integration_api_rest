@@ -19,9 +19,9 @@ class ShipmentPriceListService
     }
 
     /**
-     * Przelicza ceny dla podanych przesyłek.
+
      *
-     * @param array $shipmentsData Tablica danych przesyłek (zgodna ze strukturą przesyłki)
+     * @param array 
      * @return ShipmentPriceListItem[]
      * @throws InpostApiException
      */

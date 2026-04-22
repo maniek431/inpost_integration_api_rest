@@ -16,8 +16,7 @@ class PointService
         $this->httpClient = $httpClient;
     }
     /*
-     * Pobiera listę punktów na podstawie filtrów.
-     * @param array $filters Tablica filtrów (np. ['city' => 'Kraków', 'type' => 'parcel_locker'])
+\
      * @return Point[]
      * @throws InpostApiException
      */
@@ -38,9 +37,9 @@ class PointService
     }
 
     /**
-     * Pobiera szczegóły konkretnego punktu po jego nazwie (np. KRA011)
+
      *
-     * @param string $name
+     * @param string
      * @return Point
      * @throws InpostApiException
      */

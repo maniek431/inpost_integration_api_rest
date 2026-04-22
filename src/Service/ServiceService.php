@@ -17,7 +17,6 @@ class ServiceService
     }
 
     /**
-     * Pobiera listę dostępnych usług InPost.
      *
      * @return Service[]
      * @throws InpostApiException
@@ -36,9 +35,8 @@ class ServiceService
     }
 
     /**
-     * Pobiera szczegóły konkretnej usługi po jej ID.
      *
-     * @param string $serviceId
+     * @param string 
      * @return Service
      * @throws InpostApiException
      */

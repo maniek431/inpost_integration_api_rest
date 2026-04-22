@@ -6,6 +6,7 @@ use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Client;
 use maniek431\Inpost_Integration_Api_Rest\Service\ShipmentService;
 use maniek431\Inpost_Integration_Api_Rest\Service\DispatchOrderPriceListService;
+use maniek431\Inpost_Integration_Api_Rest\Service\DispatchOrderService;
 use maniek431\Inpost_Integration_Api_Rest\Service\ShipmentPriceListService;
 use maniek431\Inpost_Integration_Api_Rest\Service\PointService;
 use maniek431\Inpost_Integration_Api_Rest\Service\TrackingService;
@@ -16,6 +17,7 @@ use maniek431\Inpost_Integration_Api_Rest\Service\WeekendDeliveryService;
 use maniek431\Inpost_Integration_Api_Rest\Service\MPKService;
 use maniek431\Inpost_Integration_Api_Rest\Service\StatusService;
 use maniek431\Inpost_Integration_Api_Rest\Service\RaportCODService;
+use maniek431\Inpost_Integration_Api_Rest\Service\BatchService;
 
 class InpostApi
 {
@@ -55,6 +57,11 @@ class InpostApi
     public function dispatchOrderPriceList(): DispatchOrderPriceListService
     {
         return new DispatchOrderPriceListService($this->httpClient);
+    }
+
+    public function dispatchOrders(): DispatchOrderService
+    {
+        return new DispatchOrderService($this->httpClient, $this->organizationId);
     }
 
     public function tracking(): TrackingService
@@ -98,6 +105,10 @@ class InpostApi
     public function raportcod(): RaportCODService
     {
         return new RaportCODService($this->httpClient, $this->organizationId);
+    }
+    public function batch():BatchService
+    {
+        return new BatchService($this->httpClient, $this->organizationId);
     }
 
 

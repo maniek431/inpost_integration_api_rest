@@ -19,10 +19,8 @@ class RaportCODService
     }
 
     /**
-     * Pobiera raport COD (pobrania) dla organizacji w zadanym zakresie dat.
-     *
-     * @param string $startDate Data początkowa (format YYYY-MM-DD)
-     * @param string $endDate Data końcowa (format YYYY-MM-DD)
+     * @param string 
+     * @param string 
      * @return RaportCOD
      * @throws InpostApiException
      */

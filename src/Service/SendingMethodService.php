@@ -17,7 +17,6 @@ class SendingMethodService
     }
 
     /**
-     * Pobiera listę dostępnych sposobów nadania.
      *
      * @return SendingMethod[]
      * @throws InpostApiException

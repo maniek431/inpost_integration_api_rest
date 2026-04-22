@@ -23,11 +23,10 @@ class Point
     public bool $virtual;
     public ?string $image_url;
     public ?string $location_type;
-    public bool $easy_access_zone; // Indicates if the point has easy access
-    public array $details; // Raw data from API
-    public ?int $supported_locker_temperatures; // Can be null or 0 if not applicable
-    public ?string $physical_type_description; // Can be null
-
+    public bool $easy_access_zone; ss
+    public array $details; 
+    public ?int $supported_locker_temperatures; 
+    public ?string $physical_type_description; 
 
     public function __construct(array $data)
     {

@@ -9,8 +9,8 @@ class DispatchOrderPriceList
     public ?int $total_success_count;
     public ?int $total_error_count;
     public ?string $total_price;
-    public array $invalid_shipments; // Assuming this is an array of invalid shipment details
-    public array $price_list; // Assuming this is an array of price list items
+    public array $invalid_shipments; 
+    public array $price_list; 
 
     public function __construct(array $data)
     {

@@ -9,7 +9,7 @@ class Tracking
     public ?string $type;
     public ?string $service;
     public array $tracking_details;
-    public array $custom_attributes; // This might be an object in API, but array is fine for now
+    public array $custom_attributes;
     public ?string $expected_flow;
     public ?string $created_at;
     public ?string $updated_at;

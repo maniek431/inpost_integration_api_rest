@@ -22,7 +22,7 @@ class DispatchOrder
         $this->address = $data['address'] ?? [];
         $this->details = $data['details'] ?? [];
         $this->shipments = $data['shipments'] ?? [];
-        $this->comment = $data['comment'] ?? []; // This might be a string in API, but array is fine for now
+        $this->comment = $data['comment'] ?? []; 
     }
 
     public function isCompleted(): bool
